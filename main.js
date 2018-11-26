@@ -33,14 +33,21 @@ alert('Cerca di ricordare questi numeri!' + arrayComputer);
 setTimeout(function() {
   for(var i = 0; i < 5; i++){
     var numeroUtente = parseInt(prompt('Ora riscrivi i numeri che ti ricordi!'));
+    // if (arrayComputer.includes(arrayUtente)) {
+    // arrayUtente.push(numeroUtente);
+    // if (arrayUtente.length > 0) {
+    // alert('Hai indovinato ' + arrayUtente.length + 'su: ' + arrayComputer.length);
+    // } else {
+    // alert('Non hai preso nemmeno un numero');
+    //   }
+    // }
   }
-}, 3000);
+}, 30000);
 
 
 // il software
 // dice quanti e quali dei numeri da indovinare sono
 // stati individuati
 
-if (arrayComputer.includes(numeroUtente)) {
-  arrayUtente.push(numeroUtente);
-}
+//se definisco il cilco for all esterno del seTimeout non prende la variabile numeroUtente quindi  deve
+//essere all interno del ciclo for sopra
